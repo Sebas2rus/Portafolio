@@ -1,0 +1,297 @@
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: block;
+    font-family: signika, sans-serif;
+    background-color: #161616;
+    color: #c3c3c3;
+    font-size: 1.2rem;
+}
+section.container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr{
+    width: 50%;
+    border: 1px solid #c0a062;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style-type: none;
+}
+.form_cont{
+    border-color: #c0a062;
+}
+textarea:focus{
+    border: 2px solid #ff0000;
+}
+
+.form:focus{
+    background-color: #ccc;
+}
+
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color: #c0a062;
+}
+
+a:visited{
+    color: #c0a062;
+}
+
+a:active{
+    color: #c0a062;
+}
+
+/* Header */
+
+
+header{
+    width: 100%;
+    overflow: hidden;
+    background-color:#161616;
+    margin-bottom: 10%;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+header a.LG{
+    color: #000;
+    background-color: #c0a062;
+    font-size: 40px;
+    line-height: 60px;
+    padding: 10px;
+    margin: 30px 10px;
+    overflow: hidden;
+    float: left;
+}
+header a.logo{
+    color: #fff;
+    font-size: 40px;
+    line-height: 150px;
+    overflow: hidden;
+    float: left;
+}
+
+header nav{
+    float: right;
+    line-height: 150px;
+}
+header nav a.head{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 25px;
+    
+}
+header nav a:hover{
+    background:#c0a062;
+    border-radius: 30px;
+}
+
+/*  Presentacion */
+
+div.container{
+    margin-bottom: 10%;
+}
+div.container img, div.container p, div.container h1{
+    margin-left: auto;
+    margin-right: auto;
+ }
+ div.container img{
+    display: block;
+     padding-bottom: 40px;
+     border-radius: 20px;
+ }
+ div.container h1{
+    text-align: center;
+    color: #fff;
+ }
+ div.container p{
+    text-align: center;
+ }
+
+
+ /* Sobre mi */
+
+ div.sobreMi h2{
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 2%;
+}
+div.sobreMi h2{
+    color: #fff;
+}
+
+/* Herramientas */
+
+section.backend, section.frontend{
+    display: inline-table;
+    padding-top: 10%;
+    padding-bottom: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+section.backend h2, section.backend h3, section.frontend h2, section.frontend h3{
+    padding-bottom: 3%;
+    color: #fff;
+}
+
+section.backend p, section.frontend p, section.frontend ul,section.backend ul{
+    padding-bottom: 3%;
+}
+
+/* Recent works */
+
+section.recentWorks{
+    padding-bottom: 7%;
+    padding-top: 7%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+section.recentWorks h2{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 3%;
+}
+section.recentWorks p{
+    text-align: center;
+}
+div.works{
+    padding-top: 5%;
+    width: 30%;
+    display: inline-table;
+}
+div.works a img{
+    width: 100%;
+    border-radius: 10px;
+}
+div.works p{
+    font-size: .95rem;
+}
+
+
+/* Collaborations */
+
+section.collaborations{
+    padding-bottom:10% ;
+    padding-top: 7%;
+}
+section.collaborations h2{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 3%;
+}
+section.collaborations p{
+    text-align: center;
+}
+
+/* StartUps */
+
+section.startups{
+    padding-bottom: 10%;
+}
+section.startups h2{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 3%;
+}
+section.startups h3{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: #fff;
+    text-align: center;
+}
+section.startups p{
+    text-align: center;
+}
+
+
+/*  Work with US */
+
+section.newProject{
+    padding: 20px;
+    margin-top: 7%;
+    border:solid 2px #c0a062;
+    border-radius: 10px;
+}
+section.newProject div.part1, section.newProject div.part2, section.newProject div.part3{
+    width: 30%;
+    display: inline-table;
+    padding-bottom: 10%;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+section.newProject div.part3 a{
+    margin-left: 80px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 2px #c0a062;
+}
+section.newProject  h2{
+    color: #fff;
+}
+
+/* Logo fin pagina */
+
+section.prefooter{
+    padding-top: 10%;
+    padding-left: 25%;
+    padding-bottom: 10%;
+}
+div.logo{
+    display: inline-table;
+    
+}
+div.SG a{
+    color: #000;
+    background-color: #c0a062;
+    font-size: 40px;
+    line-height: 60px;
+    padding: 10px;
+    margin: 30px 10px;
+}
+div.Sebastian a{
+    color: #fff;
+    font-size: 40px;
+    line-height: 60px
+}
+section.prefooter p{
+    padding-left: 130px;
+}
+
+/* Footer */
+
+section.footer{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.footer a{
+    display:inline-table;
+    padding: 20px;
+    padding-bottom: 15%;
+}
+section.footer p{
+    text-align: center;
+    color: #fff;
+    font-size: .8em;
+}
