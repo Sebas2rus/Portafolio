@@ -27,6 +27,7 @@ body {
 }
 section.container {
   width: 60%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -268,16 +269,17 @@ section.newProject h2 {
 /* Logo fin pagina */
 
 section.prefooter {
-  padding-top: 10%;
-  padding-left: 25%;
-  padding-bottom: 10%;
+  width: 100%;
+  margin: 70px 0 70px 10vw;
+
 }
 div.logo {
   display: inline-table;
 }
 section.prefooter p {
-    width: 100%;
-    text-align: right;
+  width: 100%;
+  margin-top: -50px;
+  text-align: center;
 }
 
 /* Footer */
