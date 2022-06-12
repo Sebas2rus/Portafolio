@@ -1,13 +1,30 @@
 *{
-    box-sizing: inherit;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+:root{
+    --bgColor : #161616;
+    --colorFont : #c3c3c3;
+    --detailMostaza: #c0a062;
+    --black : #000000;
+    --white : #ffffff;
+    --strong :#ffffff; 
+}
+
+
+
+strong {
+    color: var(--strong);    
+        
+}
+
 body{
     display: block;
-    font-family: signika, sans-serif;
-    background-color: #161616;
-    color: #c3c3c3;
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bgColor);
+    color: var(--colorFont);
     font-size: 1.2rem;
 }
 section.container{
@@ -17,15 +34,17 @@ section.container{
 }
 hr{
     width: 50%;
-    border: 1px solid #c0a062;
+    border: 1px solid var(--detailMostaza);
     margin-left: auto;
     margin-right: auto;
 }
+
+/* 
 ul{
     list-style-type: none;
 }
 .form_cont{
-    border-color: #c0a062;
+    border-color: var(--detailMostaza);
 }
 textarea:focus{
     border: 2px solid #ff0000;
@@ -33,22 +52,22 @@ textarea:focus{
 
 .form:focus{
     background-color: #ccc;
-}
+} */
 
 
 a{
     text-decoration: none;
 }
 a:link{
-    color: #c0a062;
+    color: var(--detailMostaza);
 }
 
 a:visited{
-    color: #c0a062;
+    color: var(--detailMostaza);
 }
 
 a:active{
-    color: #c0a062;
+    color: var(--detailMostaza);
 }
 
 /* Header */
@@ -57,7 +76,7 @@ a:active{
 header{
     width: 100%;
     overflow: hidden;
-    background-color:#161616;
+    background-color:var(--bgColor);
     margin-bottom: 10%;
 }
 
@@ -68,17 +87,18 @@ header{
     overflow: hidden;
 }
 header a.LG{
-    color: #000;
-    background-color: #c0a062;
+    color: var(--black);
+    background-color: var(--detailMostaza);
     font-size: 40px;
-    line-height: 60px;
-    padding: 10px;
-    margin: 30px 10px;
+    line-height: 100px;
+    padding: 0 5px;
+    margin: 25px 10px;
+    border-radius: .3em 0;
     overflow: hidden;
     float: left;
 }
 header a.logo{
-    color: #fff;
+    color: var(--white);
     font-size: 40px;
     line-height: 150px;
     overflow: hidden;
@@ -91,7 +111,7 @@ header nav{
 }
 header nav a.head{
     display: inline-block;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     padding: 10px 20px;
     line-height: normal;
@@ -99,8 +119,13 @@ header nav a.head{
     
 }
 header nav a:hover{
-    background:#c0a062;
+    /* background: var(--detailMostaza); */
     border-radius: 30px;
+    border-bottom: solid 1px var(--detailMostaza);
+    font-size: 1.3em;
+    right: 100%;
+    transition: .8s ;
+    color: var(--detailMostaza);
 }
 
 /*  Presentacion */
@@ -119,7 +144,7 @@ div.container img, div.container p, div.container h1{
  }
  div.container h1{
     text-align: center;
-    color: #fff;
+    color: var(--white);
  }
  div.container p{
     text-align: center;
@@ -136,7 +161,7 @@ div.container img, div.container p, div.container h1{
     padding-bottom: 2%;
 }
 div.sobreMi h2{
-    color: #fff;
+    color: var(--white);
 }
 
 /* Herramientas */
@@ -151,7 +176,7 @@ section.backend, section.frontend{
 }
 section.backend h2, section.backend h3, section.frontend h2, section.frontend h3{
     padding-bottom: 3%;
-    color: #fff;
+    color: var(--white);
 }
 
 section.backend p, section.frontend p, section.frontend ul,section.backend ul{
@@ -167,7 +192,7 @@ section.recentWorks{
     margin-top: auto;
 }
 section.recentWorks h2{
-    color: #fff;
+    color: var(--white);
     text-align: center;
     padding-bottom: 3%;
 }
@@ -195,7 +220,7 @@ section.collaborations{
     padding-top: 7%;
 }
 section.collaborations h2{
-    color: #fff;
+    color: var(--white);
     text-align: center;
     padding-bottom: 3%;
 }
@@ -210,13 +235,13 @@ section.startups{
 }
 section.startups h2{
     text-align: center;
-    color: #fff;
+    color: var(--white);
     padding-bottom: 3%;
 }
 section.startups h3{
     padding-top: 3%;
     padding-bottom: 1%;
-    color: #fff;
+    color: var(--white);
     text-align: center;
 }
 section.startups p{
@@ -229,7 +254,7 @@ section.startups p{
 section.newProject{
     padding: 20px;
     margin-top: 7%;
-    border:solid 2px #c0a062;
+    border:solid 2px var(--detailMostaza);
     border-radius: 10px;
 }
 section.newProject div.part1, section.newProject div.part2, section.newProject div.part3{
@@ -244,10 +269,10 @@ section.newProject div.part3 a{
     margin-left: 80px;
     padding: 10px 20px;
     border-radius: 10px;
-    border: solid 2px #c0a062;
+    border: solid 2px var(--detailMostaza);
 }
 section.newProject  h2{
-    color: #fff;
+    color: var(--white);
 }
 
 /* Logo fin pagina */
@@ -262,15 +287,15 @@ div.logo{
     
 }
 div.SG a{
-    color: #000;
-    background-color: #c0a062;
+    color: var(--black);
+    background-color: var(--detailMostaza);
     font-size: 40px;
     line-height: 60px;
     padding: 10px;
     margin: 30px 10px;
 }
 div.Sebastian a{
-    color: #fff;
+    color: var(--white);
     font-size: 40px;
     line-height: 60px
 }
@@ -292,6 +317,6 @@ section.footer a{
 }
 section.footer p{
     text-align: center;
-    color: #fff;
+    color: var(--white);
     font-size: .8em;
 }
